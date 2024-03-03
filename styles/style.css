@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff0000;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.search-bar {
+  margin-top: 10px;
+}
+
+#searchInput {
+  padding: 5px;
+  width: 200px;
+}
+
+#searchButton {
+  padding: 5px 10px;
+}
+
+.filter-options {
+  margin: 20px;
+}
+
+#statusFilter {
+  padding: 5px;
+}
+
+#examList {
+  margin: 20px;
+}
+
+.exam-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.start-exam {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(red, transparent);
+  z-index: 100;
+}
+.filter-options{
+  margin-top: 10%;
+}
+
+.nav-logo p{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+.nav-menu ul{
+  display: flex;
+}
+.nav-menu ul li{
+  list-style-type: none;
+}
+.nav-menu ul li .link{
+  text-decoration: none;
+  font-weight: 500;
+  color: black; /* header text*/
+  padding-bottom: 15px;
+  margin: 0 25px;
+}
+
+.link:hover, .active{
+  border-bottom: 2px solid #fff;
+}
+
+.search-bar{
+  margin-left: 70%;
+}

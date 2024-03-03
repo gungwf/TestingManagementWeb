@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: white; /*wallpaper*/
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(red, transparent);
+    z-index: 100;
+}
+.nav-logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: black; /* header text*/
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  margin-left: 130px;
+  margin-bottom: -120px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-top: 130px;
+}
+.section-title {
+  font-weight: 400;
+}
+.dropdown {
+  outline: none;
+  border: none;
+  background-color: #f1f4f8;
+  border-radius: 5px;
+  width: 150px;
+  padding: 5px;
+  margin-right: 30px;
+}
+
+.frame{
+  background-color: rgba(80, 115, 251, .1);
+  width: 220px;
+  height: 150px;
+  margin: 150px 250px;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  margin-top: -50px;
+}
+
+.card-preview-grid{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.card-stats{
+  font-size: 20px;
+  padding-top: 35px;
+  padding-left: 15px;
+}  
+
+.card-number {
+  font-size: 30px
+}
+
+.card-info {
+  font-size: 13px;
+}
+
+.student-picture{
+  width: 100px;
+  padding-top: 25px;
+}
+
+.chart-picture{
+  width: 100px;
+  padding-top: 25px;
+}
+
+.card-number-participant{
+  font-size: 30px
+}
+
+.card-number-overall-participant{
+  font-size: 13px;
+}
+
+.card-preview-grid2{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.avg-score-number {
+  font-size: 50px;
+  padding-left: 60px;
+  padding-top: -10px;
+}
+
+.avg-score-title {
+  font-size: 15px;
+  padding-left: 35px;
+  padding-top: -70px;
+}
+
+body {
+  font-family: Arial;
+}
+
+.management-test-title{
+  margin-left: 50px;
+  font-weight: 400;
+}
+
+.testing-grid,
+.testing-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.testing-input-grid {
+  margin-bottom: 10px;
+  align-items: stretch;
+  margin-left: 50px;
+}
+
+.name-input,
+.due-date-input {
+  font-size: 15px;
+  padding: 6px;
+}
+
+.add-testing-button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 37px;
+  border-radius: 20px;
+}
+
+.delete-testing-button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+.user-input-grid{
+  display: grid;
+  grid-template-columns: 150px 200px 150px 200px 100px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.user-grid,
+.user-input-grid {
+  display: grid;
+  grid-template-columns: 150px 200px 150px 200px 100px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.add-user-button {
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 37px;
+  border-radius: 20px;
+}
+
+.delete-user-button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}

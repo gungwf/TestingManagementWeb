@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <title>Lọc cột theo tên và điểm trung bình</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 200px;
+        }
+        input[type="submit"] {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="filterForm">
+        <label for="filterName">Tên:</label>
+        <input type="text" id="filterName" name="filterName">
+
+        <label for="filterAverageScore">Điểm trung bình lớn hơn:</label>
+        
+        <input type="number" id="filterAverageScore" name="filterAverageScore" step="0.1" min="0">
+
+        <input type="submit" value="Lọc">
+    </form>
+    
+    <table id="resultTable">
+        <tr>
+            <th>Tên</th>
+            <th>Tổng số lần thử</th>
+            <th>Tỷ lệ hoàn thành</th>
+            <th>Điểm trung bình</th>
+        </tr>
+    </table>
+    <button id="editButton">Edit</button>
+    <button id="saveButton">Save</button>
+
+    <button id="exportButton">Export to Excel</button>
+
+    <script src="scripts/trangthongke.js"></script>
+</body>
+</html>
